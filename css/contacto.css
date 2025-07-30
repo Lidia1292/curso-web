@@ -1,0 +1,50 @@
+.formulario {
+    background-color: var(--secundario);
+    width: min(80rem, 90%);
+    margin: 1rem auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0,5);
+}
+.formulario fieldset {
+    border: none;
+}
+
+.formulario legend {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.campo-formulario {
+    margin-bottom: 1rem;
+    width: 100%; 
+}
+
+.formulario label {
+    text-transform: capitalize; 
+    color: var(--secundario-oscuro);
+    font-weight: bold;
+    margin-bottom: 0.5rem; 
+}
+
+.formulario .campo-formulario > label { /*el simbolo mayor hace que solo le afecte a los hijos y no a los nietos*/
+    display: block;                     /*display block para que el label ocupe toda la fila y el input se colque debajo*/
+}
+
+/* .input-formulario {
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    appearance: none;
+} */
+
+/* .flex {
+    display: flex;
+
+} */
+.derecha {
+    justify-content: end;
+}

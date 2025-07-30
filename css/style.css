@@ -1,0 +1,163 @@
+:root {
+  --primario: #67867a;
+  --secundario: #ccd6a6;
+  --blanco: #fff;
+  --claro: #f8fafc;
+  --oscuro: #1f2937;
+  --texto: #374151;
+  --rojo: #81080e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; /*damos el valor de 10px al tamaño de nuestra letra*/
+}
+
+body {
+  font-size: 16px; /* volvemos a darle 16px al tamaño de mi letra */
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--primario);
+  background-color: var(--claro);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /*inherit fuerza a que herede el valor del padre*/
+}
+
+.navegacion {
+  display: flex;
+  background-color: var(--blanco);
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.navegacion img {
+  width: 8rem;
+  height: 8rem;
+  
+}
+
+.link-navegacion {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.link-navegacion a:hover {
+  color: var(--secuundario);
+}
+
+.link-navegacion a {
+  transition: color 0.3s;
+  font-size: 2rem;
+}
+
+.link-navegacion a:active {
+  font-size: 1.8rem;
+}
+
+.hero {
+  background: url("../IMG/inmobiliaria.jpg") no-repeat center/cover;
+  color: var(--blanco);
+  text-align: center;
+  padding: 10rem 2rem;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-contenido {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.boton {
+  display: inline-block;
+  background-color: var(--secundario);
+  color: var(--blanco);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  margin: 2rem;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.boton:hover {
+  background-color: var(--primario);
+  transform: scale(1.1);
+}
+
+.boton:active {
+  transform: scale(0.1);
+}
+
+.contenedor {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.nosotros h2 {
+  margin-bottom: 1rem;
+  color: var(--primario);
+}
+
+.nosotros p {
+  text-align: center;
+  color: var(--texto);
+  max-width: 80rem;
+  margin: auto;
+}
+
+.trabajos {
+  display: flex;
+  gap: 2rem;
+}
+
+.trabajos article {
+  background-color: var(--blanco);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.trabajos p{
+    color: var(--texto);
+}
+
+footer{
+    background-color: var(--oscuro);
+    padding: 2rem;
+    text-align: center;
+    color: var(--blanco);
+    font-size: x-small;
+    margin-top: 2rem;
+}
+
+.trabajos article:hover{
+    transform:scale(1.5)
+}
+
+.trabajos p:active{
+    color:var(--rojo)
+    
+}
+
+
+
