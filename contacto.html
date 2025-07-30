@@ -1,118 +1,125 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inmobiliaria Eureka</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/contacto.css">
-  </head>
-  <body>
-    <header>
-      <div class="navegacion">
-        <h1>InmobiliariaEureka</h1>
-        <img src="IMG/logo.png" alt="Logo de la inmobiliaria" />
-        <nav>
-          <ul class="link-navegacion">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Propiedades</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inmobiliaria Eureka</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+
+<body>
+  <header>
+    <div class="navegacion">
+      <h1>InmobiliariaEureka</h1>
+      <img src="IMG/logo.png" alt="Logo de la inmobiliaria" />
+      <nav>
+        <ul class="link-navegacion">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#">Propiedades</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+    <section class="hero">
+      <div class="hero-contenido">
+        <h2>Tu nuevo hogar te espera</h2>
+        <p>Encuentra propiedades exclusivas en las mejores zonas</p>
+        <a class="boton" href="#">Ver propiedades</a>
       </div>
-      <section class="hero">
-        <div class="hero-contenido">
-          <h2>Tu nuevo hogar te espera</h2>
-          <p>Encuentra propiedades exclusivas en las mejores zonas</p>
-          <a class="boton" href="#">Ver propiedades</a>
+    </section>
+  </header>
+  <main>
+    <h2>Formulario de contacto</h2>
+    <form action="" class="formulario">
+      <fieldset>
+        <legend>Solicítanos información enviando este formulario</legend>
+        <div class="campo-formulario">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" class="input-formulario" placeholder="escribe tu nombre"
+            required>
         </div>
-      </section >
-    </header>
-    <main>
-      <h2>Formulario de contacto</h2>
-      <form action="" class="formulario">
-        <fieldset>
-            <legend>Solicítanos información enviando este formulario</legend>
-            <div class="campo-formulario">
-            <label for="nombre">Nombre</label>
-            <input id="nombre" name="nombre" type="text" class="input-formulario" placeholder="escribe tu nombre" required>
-            </div>
 
-            <div class="campo-formulario">
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" class="input-formulario" placeholder="escribe tu E-mail" required>
-            </div>
+        <div class="campo-formulario">
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" class="input-formulario" placeholder="escribe tu E-mail" required>
+        </div>
 
-            <div class="campo-formulario">
-            <label for="telefono">Teléfono</label>
-            <input type="tel" name="telefono" id="telefono" class="input-formulario" placeholder="escribe tu telefono">
-            </div>
+        <div class="campo-formulario">
+          <label for="telefono">Teléfono</label>
+          <input type="tel" name="telefono" id="telefono" class="input-formulario" placeholder="escribe tu telefono">
+        </div>
 
-            <div class="campo-formulario">
-            <label for="interes">Interés</label>
-            <input type="text" name="interes" class="input-formulario" id="interes" placeholder="Escribe lo que estás buscando" list="lista-interes">
-            <datalist id="lista-interes">
-                <option value="Apartamento"></option>
-                <option value="Chalet"></option>
-                <option value="Terreno"></option>
-                <option value="Loft"></option>
-                <option value="Local"></option>
-            </datalist>
-            </div>
+        <div class="campo-formulario">
+          <label for="interes">Interés</label>
+          <input type="text" name="interes" class="input-formulario" id="interes"
+            placeholder="Escribe lo que estás buscando" list="lista-interes">
+          <datalist id="lista-interes">
+            <option value="Apartamento"></option>
+            <option value="Chalet"></option>
+            <option value="Terreno"></option>
+            <option value="Loft"></option>
+            <option value="Local"></option>
+          </datalist>
+        </div>
 
-            <div class="campo-formulario">
-                <label for="tipoinfo">Tipo de información</label>
-                <select name="tipoinfo" id="tipoinfo" class="input-formulario" required>
-                    <option value="" selected disabled>pincha aquí para seleccionar una opción</option>
-                    <optgroup label="Profesional">
-                        <option value="profcomp">Profesional buscando vender</option>
-                        <option value="profven">Profesional buscando comprar</option>
-                    </optgroup>
-                    <optgroup label="Particular">
-                        <option value="partcomp">Particular buscando vender</option>
-                        <option value="partven">Particular buscando comprar</option>
-                    </optgroup>
-                </select>
-            </div>
+        <div class="campo-formulario">
+          <label for="tipoinfo">Tipo de información</label>
+          <select name="tipoinfo" id="tipoinfo" class="input-formulario" required>
+            <option value="" selected disabled>pincha aquí para seleccionar una opción</option>
+            <optgroup label="Profesional">
+              <option value="profcomp">Profesional buscando vender</option>
+              <option value="profven">Profesional buscando comprar</option>
+            </optgroup>
+            <optgroup label="Particular">
+              <option value="partcomp">Particular buscando vender</option>
+              <option value="partven">Particular buscando comprar</option>
+            </optgroup>
+          </select>
+        </div>
 
-            <div class="campo-formulario">
-                <label>Selecciona preferencia para contactarte</label>
-                <input type="radio" id="preftel" name="contacto" value="preftel">
-                <label for="preftel">Teléfono</label>
-                <input type="radio" id="prefmail" name="contacto" value="prefmail">
-                <label for="prefmail">E-mail</label>
-            </div>
+        <div class="campo-formulario">
+          <label>Selecciona preferencia para contactarte</label>
+          <div class="prefes">
+            <input type="radio" id="preftel" name="contacto" value="preftel">
+            <label for="preftel">Teléfono</label>
+            <input type="radio" id="prefmail" name="contacto" value="prefmail">
+            <label for="prefmail">E-mail</label>
+          </div>
+        </div>
 
-            <div class="campo-formulario">
-                <label>Selecciona la zona</label>
-                <div class="interes">
-                    <input type="checkbox" name="ciudad" id="ciudad">
-                    <label for="ciudad">Ciudad</label>
-                    <input type="checkbox" name="campo" id="campo">
-                    <label for="campo">Campo</label>
-                    <input type="checkbox" name="centro" id="centro">
-                    <label for="centro">Centro</label>
-                    <input type="checkbox" name="ubanizaciones" id="ubanizaciones">
-                    <label for="ubanizaciones">Urbanizaciones</label>
-                </div>
-            </div>
+        <div class="campo-formulario">
+          <label>Selecciona la zona</label>
+          <div class="interes">
+            <input type="checkbox" name="ciudad" id="ciudad">
+            <label for="ciudad">Ciudad</label>
+            <input type="checkbox" name="campo" id="campo">
+            <label for="campo">Campo</label>
+            <input type="checkbox" name="centro" id="centro">
+            <label for="centro">Centro</label>
+            <input type="checkbox" name="ubanizaciones" id="ubanizaciones">
+            <label for="ubanizaciones">Urbanizaciones</label>
+          </div>
+        </div>
 
-            <div class="campo-formulario">
-                <textarea name="mensaje" id="mensaje" placeholder="Escribe cualquier cosa que añadir"></textarea>
-            </div>
+        <div class="campo-formulario">
+          <textarea name="mensaje" id="mensaje" placeholder="Escribe cualquier cosa que quieras añadir"></textarea>
+        </div>
 
-            <div class="flex derecha">
-                <input type="submit" class="boton" value="enviar">
-            </div>
+        <div class="flex derecha">
+          <input type="submit" class="boton sin-margen" value="enviar">
+        </div>
 
 
-        </fieldset>
-      </form>
+      </fieldset>
+    </form>
 
-    </main>
-    <footer>
-      <p>&copy; Inmobiliaria Eureka. Todos los derechos reservados.</p>
-    </footer>
-  </body>
+  </main>
+  <footer>
+    <p>&copy; Inmobiliaria Eureka. Todos los derechos reservados.</p>
+  </footer>
+</body>
+
 </html>
