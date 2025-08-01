@@ -78,7 +78,7 @@
     padding: 1rem;
     font-size: 1.5rem;
     min-height: 20rem;
-    resize: vertical; /*para poder modificar el textaera pero solo en vertical*/
+    resize: vertical; /*para poder cambiar el tamaño del textaera pero solo en vertical*/
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
 }

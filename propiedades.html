@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inmobiliaria Eureka</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/propiedades.css">
+</head>
+
+<body>
+    <header>
+        <div class="navegacion">
+            <h1>InmobiliariaEureka</h1>
+            <img src="IMG/logo.png" alt="Logo de la inmobiliaria" />
+            <nav>
+                <ul class="link-navegacion">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="propiedades.html">Propiedades</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <section class="contenedor buscar">
+            <h2 class="centro">Buscar Propiedad</h2>
+            <form action="" class="buscar-form">
+                <input type="text" placeholder="Ubicación, ciudad, barrio...">
+                <select name="tipo" id="">
+                    <option value="" selected disabled>Tipo de propiedad</option>
+                    <option value="casa">Casa</option>
+                    <option value="apar">Apartamento</option>
+                    <option value="terr">Terreno</option>
+                </select>
+                <select name="precio" id="">
+                    <option value="" selected disabled>Rango de precio</option>
+                    <option value="1">Hasta 50.000€</option>
+                    <option value="2">50.000€-100.000€</option>
+                    <option value="3">Más de 100.000€</option>
+                </select>
+                <button type="submit" class="boton">Buscar</button>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; Inmobiliaria Eureka. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
