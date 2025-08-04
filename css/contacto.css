@@ -4,8 +4,9 @@
     margin: 1rem auto;
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0,5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
 .formulario fieldset {
     border: none;
 }
@@ -20,18 +21,16 @@
 
 .campo-formulario {
     margin-bottom: 1rem;
-    width: 100%; 
+    width: 100%;
 }
 
-.formulario label {
-    text-transform: capitalize; 
-    color: var(--secundario-oscuro);
+.campo-formulario label {
+    text-transform: capitalize;
     font-weight: bold;
-    margin-bottom: 0.5rem; 
 }
 
-.formulario .campo-formulario > label { /*el simbolo mayor hace que solo le afecte a los hijos y no a los nietos*/
-    display: block;                     /*display block para que el label ocupe toda la fila y el input se colque debajo*/
+.campo-formulario>label {
+    display: block;
 }
 
 .input-formulario {
@@ -44,14 +43,14 @@
     appearance: none;
 }
 
-.prefes, .interes { /*la coma enumera clases y afecta a las dos. si solo pongo espacio afecta a un elemento que hay dentro de otro*/
+.prefes, .interes {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     gap: 1rem;
 }
 
-.campo-formulario input[type="radio"], 
+.campo-formulario input[type="radio"],
 .campo-formulario input[type="checkbox"] {
     display: none;
 }
@@ -66,10 +65,10 @@
     cursor: pointer;
 }
 
-.campo-formulario input[type="radio"]:checked+label, 
-.campo-formulario input[type="checkbox"]:checked+label {
+.campo-formulario .prefes input[type="radio"]:checked+label,
+.campo-formulario .interes input[type="checkbox"]:checked+label {
     background-color: var(--primario);
-    color: var(--claro);
+    color: var(--blanco);
 }
 
 .campo-formulario textarea {
@@ -78,10 +77,11 @@
     padding: 1rem;
     font-size: 1.5rem;
     min-height: 20rem;
-    resize: vertical; /*para poder cambiar el tamaño del textaera pero solo en vertical*/
+    resize: vertical;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
 }
+
 
 .sin-margen {
     margin: 0;
@@ -89,8 +89,32 @@
 
 .flex {
     display: flex;
-
 }
+
 .derecha {
     justify-content: end;
+}
+
+.inicio {
+    order: 4;
+    height: 8rem;
+    background-color: red;
+}
+
+.prop {
+    order: 3;
+    background-color: red;
+    height: 4rem;
+}
+
+.cont {
+    order: 2;
+    background-color: red;
+    height: 4rem;
+}
+
+.serv {
+    order: 1;
+    background-color: red;
+    height: 4rem;
 }

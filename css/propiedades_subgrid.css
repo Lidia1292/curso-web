@@ -1,0 +1,95 @@
+.buscar {
+    text-align: center;
+}
+
+.buscar-form {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.buscar-form input,
+.buscar-form select {
+    padding: 1.2rem;
+    margin: 2rem 0;
+    border: 1px solid var(--oscuro);
+    border-radius: 0.5rem;
+    width: 20rem;
+    font-size: 1.3rem;
+}
+
+/* Propiedades */
+
+.propiedades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1fr, auto, auto, auto, auto);
+  gap: 2rem;
+
+}
+
+.tarjeta-propiedad {
+   
+    width: 100%;
+    background-color: var(--blanco);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: transform 0.2s;
+
+    grid-row: span 5;
+    display: grid;
+    grid-template-rows: subgrid;
+    row-gap: 0;
+}
+
+.tarjeta-propiedad img {
+    object-fit: cover;
+    width: 100%;
+    height: 20rem;
+}
+
+.tarjeta-propiedad:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta-propiedad:active {
+    transform: scale(0.95);
+}
+
+.ancho {
+  grid-column: span 2;
+}
+
+
+.propiedad-info {
+  padding: 1rem;
+
+  grid-row: span 4;
+  display: grid;
+  grid-template-rows: subgrid;
+}
+
+.propiedad-info h3 {
+  margin-bottom: 0.5rem;
+  color: var(--oscuro);
+}
+
+.propiedad-info p {
+  color: var(--primario);
+  font-size: 1rem;
+}
+
+.propiedad-info .dormitorios {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.propiedad-info .precio {
+  display: block;
+  margin-top: 0.75rem;
+  font-weight: bold;
+  color: var(--secundario);
+  font-size: 1.4rem;
+  text-align: right;
+}
