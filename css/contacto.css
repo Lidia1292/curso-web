@@ -1,10 +1,13 @@
 .formulario {
     background-color: var(--secundario);
-    width: min(80rem, 90%);
+    width: min(90rem, 100%);
     margin: 1rem auto;
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .formulario fieldset {
@@ -49,6 +52,10 @@
     justify-content: space-evenly;
     gap: 1rem;
 }
+.interes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 .campo-formulario input[type="radio"],
 .campo-formulario input[type="checkbox"] {
@@ -85,14 +92,17 @@
 
 .sin-margen {
     margin: 0;
+    width: 100%;
 }
 
 .flex {
     display: flex;
+
 }
 
 .derecha {
     justify-content: end;
+    
 }
 
 .inicio {
@@ -117,4 +127,15 @@
     order: 1;
     background-color: red;
     height: 4rem;
+}
+
+@media (min-width:768px) {
+.prefes, .interes {
+    display: flex;
+    justify-content: space-evenly;
+}
+.sin-margen {
+    width: auto;
+}
+
 }

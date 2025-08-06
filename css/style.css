@@ -44,6 +44,14 @@ a {
     width: 6rem;
 }
 
+.navegacion input[type="checkbox"] {
+    display: none;
+}
+.navegacion label {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
 .link-navegacion {
     list-style: none;
     display: flex;
@@ -181,9 +189,21 @@ footer {
     display: block;
     text-align: center;
 }
-.link-navegacion {
+    .link-navegacion {
     flex-direction: column;
     align-items: start;
+    transform: translateX(-100%);
+    transition: all 1s;
+
+    position: fixed;
+    padding: 2rem;
+    background-color: var(--claro);
+    top: 0;
+    left: 0;
+}
+
+input[type="checkbox"]:checked+.link-navegacion {
+    transform: translateX(0);
 }
 
     .trabajos {
@@ -193,4 +213,10 @@ footer {
     margin-bottom: 1rem;
 }
 
+}
+
+@media (min-width:768px) {
+    .navegacion label {
+        display: none;
+    }
 }
