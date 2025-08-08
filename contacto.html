@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inmobiliaria Eureka</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style_popover.css" />
     <link rel="stylesheet" href="css/contacto.css" />
   </head>
   <body>
@@ -13,9 +13,8 @@
         <h1>InmobiliariaEureka</h1>
         <img src="img/logo.png" alt="Logo de la Inmobiliaria" />
         <nav>
-          <label for="menu">&#9776;</label>
-          <input type="checkbox" name="menu" id="menu">
-          <ul class="link-navegacion">
+          <button popovertarget="mimenu">&#9776;</button>
+          <ul popover id="mimenu" class="link-navegacion">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="propiedades.html">Propiedades</a></li>
             <li><a href="#">Servicios</a></li>
