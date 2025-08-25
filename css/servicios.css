@@ -1,0 +1,107 @@
+body {
+    background-color: var(--secundario);
+}
+
+.servicios {
+    background-color: var(--secundario);
+    text-align: center;
+    padding: 10px;
+}
+
+.servicios h2 {
+    margin: 30px auto;
+}
+
+.contenedor-main {
+    display: block;
+    align-items: center;
+    margin: 10px;
+}
+
+.contenedor-main h3 {
+    margin-top: 40px;
+}
+
+
+.contenedor-main img {
+    width: 100%;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.datos a {
+    display: flex;
+    color: var(--principal);
+    text-decoration: none;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.datos svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.objetivo img {
+    width: 100%;
+    padding: 5px;
+}
+
+.objetivo h2 {
+    margin-bottom: 0;
+}
+
+.contenedor-casos {
+    display: block;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.contenedor-casos h2 {
+    margin-bottom: 5px;
+}
+
+.casos {
+    border: 1px solid var(--primario);
+    margin-bottom: 10px;
+}
+
+.justificado {
+    text-align: justify;
+    margin: 10px;
+}
+
+@media (min-width:768px) {
+    .contenido-objetivo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .contenido-objetivo p {
+
+        margin-top: 12rem;
+    }
+
+    .articulos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+
+    .articulos h4 {
+        margin-top: 10px;
+    }
+
+
+
+
+}
