@@ -79,7 +79,9 @@ body {
 }
 
 @media (min-width:768px) {
-    .contenido-objetivo {
+
+    .contenido-objetivo,
+    .articulos {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
@@ -90,18 +92,50 @@ body {
         margin-top: 12rem;
     }
 
-    .articulos {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-
-    }
 
     .articulos h4 {
         margin-top: 10px;
     }
+}
 
+@media (min-width:1140px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: 0.8fr 3fr 0.8fr;
+        gap: 50px;
+    }
 
+    .contenido-objetivo,
+    .articulos {
+        display: block;
 
+    }
+
+    .contenedor-objetivo {
+        order: -1;
+    }
+
+    .articles {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5 auto);
+    }
+
+    .asesoria,
+    .prop-destacadas,
+    .gestion {
+        display: grid;
+        grid-row: span 5;
+        grid-template-rows: subgrid;
+    }
+
+    .objetivo p {
+        margin-top: 10px;
+    }
+
+    .gestion {
+        justify-content: center;
+        text-align: center;
+    }
 
 }
